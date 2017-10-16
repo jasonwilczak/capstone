@@ -1,0 +1,59 @@
+/** Globals **/
+body {
+    padding: 0 24px;
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #000000;
+    text-decoration: none;
+    font-weight: normal;
+}
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+.flex-container_inline {
+    display: inline-flex;
+    align-items: center;
+}
+.flex-justify_space-between {
+    justify-content: space-between;
+}
+.spaced-links a:not(:last-child) {
+    margin-right: 16px;
+}
+/** Header styles **/
+header {
+    height: 64px;
+    width: 100%;
+    
+}
+.header-left {
+    font-weight: lighter;
+    height: 32px;
+}
+header strong {
+    font-weight: bold;
+}
+.header-mobile {
+    display: none;
+}
+@media only screen and (max-width: 500px) {
+    .header-desktop {
+        display: none;
+    }
+    .header-mobile {
+        display: inherit;
+    }
+}
+
+/** Main styles **/
+
+
+/** Footer styles **/
+footer {
+    width: 100%;
+}
