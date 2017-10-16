@@ -1,6 +1,7 @@
 /** Globals **/
 body {
     padding: 0 24px;
+    font-size: 16px;
 }
 a,
 a:link,
@@ -23,7 +24,7 @@ a:active {
     justify-content: space-between;
 }
 .spaced-links a:not(:last-child) {
-    margin-right: 16px;
+    margin-right: 1rem;
 }
 /** Header styles **/
 header {
@@ -33,20 +34,21 @@ header {
 }
 .header-left {
     font-weight: lighter;
-    height: 32px;
+    height: 2rem;
 }
 header strong {
     font-weight: bold;
 }
 .header-mobile {
-    display: none;
+    display:none;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     .header-desktop {
         display: none;
     }
     .header-mobile {
-        display: inherit;
+        display:inherit;
+        width: 100%;
     }
 }
 
@@ -55,5 +57,14 @@ header strong {
 
 /** Footer styles **/
 footer {
+    padding-top: 1rem;
     width: 100%;
+}
+.footer-right {
+    display: inherit;
+}
+@media only screen and (max-width: 600px) {
+    .footer-right {
+        display: none;
+    }
 }
