@@ -1,7 +1,7 @@
 /** Globals **/
 body {
-    padding: 0 24px;
     font-size: 16px;
+    padding: 0 1.5rem 2rem 1.5rem;
 }
 a,
 a:link,
@@ -12,9 +12,14 @@ a:active {
     text-decoration: none;
     font-weight: normal;
 }
+h2 {
+    font-weight: bold;
+    font-size: 2rem;
+}
 .flex-container {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 .flex-container_inline {
     display: inline-flex;
@@ -23,8 +28,34 @@ a:active {
 .flex-justify_space-between {
     justify-content: space-between;
 }
+.flex-direction_column {
+    flex-direction: column;
+}
 .spaced-links a:not(:last-child) {
     margin-right: 1rem;
+}
+button {
+    background-color: #555555;
+    border: none;
+    color: white;
+    padding: .5rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.mobile {
+    display:none;
+}
+@media only screen and (max-width: 600px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display:inherit;
+        width: 100%;
+    }
 }
 /** Header styles **/
 header {
@@ -39,21 +70,18 @@ header {
 header strong {
     font-weight: bold;
 }
-.header-mobile {
-    display:none;
+.background-color_lightgrey {
+    background-color: lightgrey;
 }
-@media only screen and (max-width: 600px) {
-    .header-desktop {
-        display: none;
-    }
-    .header-mobile {
-        display:inherit;
-        width: 100%;
-    }
-}
-
 /** Main styles **/
-
+section {
+    width: 100%;
+    padding: 2rem 0;
+}
+.card-large img, .card-large video {
+    width: 60%;
+    padding: 0 1.5rem 2rem 0;
+}
 
 /** Footer styles **/
 footer {
