@@ -23,7 +23,7 @@ h2 {
 }
 h3 {
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding-bottom: .5rem;
 }
 
@@ -186,6 +186,24 @@ section {
         flex-direction: column;
     }
 }
+@media only screen and (max-width: 600px) {
+    .card-small {
+        width: 100%;
+        padding: 1rem 0 1rem 1rem;
+        margin: 0 1rem .5rem 1rem;
+        background-color: lightgrey;
+        align-items: left;
+    }
+    .card-small h3 {
+        padding: 0;
+    }
+    .card-small:last-child {
+        margin-bottom: 0;
+    }
+    .card-small img, .card-small h4, .card-small p {
+        display: none;
+    }
+}
 /** main#banner **/
 .banner-content {
     text-align: center;
@@ -222,6 +240,13 @@ section {
         padding: 1rem;
     }
 }
+/** main#learn **/
+@media only screen and (max-width: 600px) {
+    #learn.flex-container {
+        flex-direction: column;
+    }
+}
+
 /** main#exhibit **/
 .exhibit-left video {
     padding-bottom: 1.5rem;
